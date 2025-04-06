@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/welcomeText"
+            android:text="Welcome"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:hint="Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_border"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/loginName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_border"
+            android:padding="18dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailId"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="18dp"
+            android:layout_marginTop="50dp"
+            android:textSize="30sp"
+            android:id="@+id/loginButton"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
